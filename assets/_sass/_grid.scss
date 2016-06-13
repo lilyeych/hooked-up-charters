@@ -1,0 +1,57 @@
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+);
+
+// .content-area {
+// 	@include container(90%);
+// 	-webkit-box-sizing: border-box;
+// 	-moz-box-sizing: border-box;
+// 	box-sizing: border-box;
+// 	@include breakpoint(mama-bear) {
+// 		width: 90%;
+// 		max-width: 1180px;
+// 	}
+// }
+
+// .inner-content-area {
+// 	@include container(90%);
+// 	-webkit-box-sizing: border-box;
+// 	-moz-box-sizing: border-box;
+// 	box-sizing: border-box;
+
+// 	@include breakpoint (baby-bear) {
+// 		@include container(80%);
+// 	}
+	
+// 	@include breakpoint(mama-bear) {
+// 		width: 90%;
+// 		max-width: 1180px;
+// 	}
+// }
+
+// .header-text {
+// 	@include breakpoint(baby-bear) {
+// 		@include span(5);
+// 	}
+// }
+
+// .header-spacer {
+// 	@include breakpoint(baby-bear) {
+// 		@include span(1);
+// 	}
+// }
+// .header-blurb {
+// 	@include breakpoint(baby-bear) {
+// 		@include span(6);
+// 	}
+// }
+
+// .portfolio-intro {
+// 	@include breakpoint(baby-bear) {
+// 		@include span(8);
+// 	}
+// }

@@ -1,0 +1,113 @@
+// Font variables
+$base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$base-line-height: 30px;
+
+$spacing-unit:     30px;
+
+// Color Variables
+$grey: #4A4A4A;
+$highlight: #417505;
+$white: #ffffff;
+
+// Width of the content area
+$content-width:    800px;
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (min-width: 1700px) { @content; }
+  }
+  @else if $point == max-papa-bear {
+    @media (max-width: 1688px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == max-mama-bear {
+    @media (max-width: 1023px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == max-baby-bear {
+    @media (max-width: 767px) { @content; }
+  }
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+ * Vertical Align
+ */
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin bg-cover { 
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+@mixin header-bg($headerImg) {
+
+  background: url('../img/banner-#{$headerImg}-mobile.jpg') no-repeat center center fixed; 
+  @include bg-cover;
+
+  /* preserve aspet ratio */
+  min-width: 100%;
+  // min-height: 100%;
+
+  /* ie fallbacks */
+  // background-image: url('../img/banner-#{$headerImg}-mobile.jpg');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}-mobile.jpg', sizingMethod='scale')";
+  
+
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background: url('../img/banner-#{$headerImg}-mobile@2x.jpg') no-repeat center center fixed; 
+    @include bg-cover;
+
+    /* ie fallbacks */
+    // background-image: url('../img/banner-#{$headerImg}-mobile@2x.jpg');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}-mobile@2x.jpg', sizingMethod='scale')";
+  }
+
+  @media only screen and (min-width: 768px) {
+    background: url('../img/banner-#{$headerImg}.jpg') no-repeat center center fixed; 
+    @include bg-cover;
+
+    /* ie fallbacks */
+    // background-image: url('../img/banner-#{$headerImg}.jpg');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}.jpg', sizingMethod='scale')";
+
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      background: url('../img/banner-#{$headerImg}@2x.jpg') no-repeat center center fixed; 
+      @include bg-cover;
+
+      /* ie fallbacks */
+      // background-image: url('../img/banner-#{$headerImg}@2x.jpg');
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}@2x.jpg', sizingMethod='scale')";
+    }
+
+  }
+}

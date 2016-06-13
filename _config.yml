@@ -15,17 +15,15 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: /hooked-up-charters
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 
-exclude: ['README.md']
-
 # Build settings
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 
 gems:
   - octopress-autoprefixer
 
 sass:
-  sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 permalink: pretty
 
