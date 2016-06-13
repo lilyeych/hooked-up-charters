@@ -19,3 +19,14 @@ exclude: ['README.md']
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - octopress-autoprefixer
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+permalink: pretty
+
+exclude: [".sass-cache", "README.md"]
