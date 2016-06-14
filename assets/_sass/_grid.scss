@@ -6,6 +6,13 @@ $susy: (
 	gutter-position: split,
 );
 
+.wrapper {
+	@include container(90%);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 // .content-area {
 // 	@include container(90%);
 // 	-webkit-box-sizing: border-box;
