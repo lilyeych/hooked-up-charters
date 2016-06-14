@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Fishing with Hooked-Up Charters
 ref: about
 permalink: /fishing-with-hooked-up-charters/

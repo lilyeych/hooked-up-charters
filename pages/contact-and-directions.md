@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Contact and Directions
 ref: contact
 permalink: /contact-and-directions/

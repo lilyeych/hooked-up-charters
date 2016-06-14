@@ -1,0 +1,11 @@
+<div class="social">
+	
+	<p><strong>{{ page.social-intro }}</strong></p>
+	{% for social in page.social-media %}
+		<li> 
+			<a href="{{ base }}{{ social.url }}.html">
+				<img src="{{ base }}/assets/img/{{ social.icon }}" alt="">
+			</a>
+		</li>
+	{% endfor %}
+</div>

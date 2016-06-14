@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include social.html %}
+
+<div class="page-intro">
+	<h2>{{ page.page-intro }}</h2>
+
+	<a class="call-to-action" href="{{ page.call-to-action-url }}">{{ page.call-to-action }}</a>
+</div>
+
+{% for teaser in page.teaser %}
+<div class="teaser"> 
+	<img src="{{ teaser.image }}" alt="{{ teaser.image-alt }}">
+	<div class="teaser-text">
+		<h3>{{ teaser.title }}</h3>
+		{{ teaser.description }}
+		<a href="{{ call-to-action-url }}">{{ call-to-action }}</a>
+	</div>
+</div>
+{% endfor %}

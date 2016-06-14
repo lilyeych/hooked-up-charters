@@ -25,6 +25,7 @@ gems:
 sass:
   style: compressed
 
-permalink: pretty
+# permalink: pretty
+permalink: /:categories/:title
 
 exclude: [".sass-cache", "README.md"]
