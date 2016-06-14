@@ -23,7 +23,16 @@
 				</ul>
 			</div>
 		</nav>
-
+		
+		<div class="page-intro">
+			<h1>
+				{% if page.hero %}
+					{{ page.hero }}
+				{% else %}
+					{{ page.title }}
+				{% endif %}
+			</h1>
+		</div>
 	</div>
 
 </header>

@@ -13,7 +13,7 @@
 
 .site-header {
 	
-	height: 500px;
+	height: 480px;
 	
 	.logo {
 		display: block;
@@ -87,6 +87,14 @@
 				display: block;
 			}
 
+		}
+	}
+
+	.page-intro {
+		height: 279px;
+		
+		h1 {
+			@extend %vertical-align;
 		}
 	}
 
