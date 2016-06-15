@@ -19,9 +19,10 @@ social-media:
 
 page-intro: Fish with us for a day, and we promise that you’ll leave with the adventure of a lifetime
 
-call-to-action: 
-    - text: Call 1-604-803-4279 to book
-      url: tell&#58;1-604-803-4279
+call-to-action-text: Call 1-604-803-4279 to book today
+
+call-to-action-url: tell:1-604-803-4279
+
 teaser:
     - image: img-home-row-1.jpg
       image-alt: 
