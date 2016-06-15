@@ -14,13 +14,7 @@
 					<img class="icon-nav-close" src="{{ site.baseurl }}/assets/img/icon-nav.svg" alt="X icon to close mobile navigation.">
 				</a>
 
-				<ul class="menu-items">
-					{% for my_page in site.pages reversed %}
-						{% if my_page.title %}
-						<li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-						{% endif %}
-					{% endfor %}
-				</ul>
+				{% include nav.html %}
 			</div>
 		</nav>
 		

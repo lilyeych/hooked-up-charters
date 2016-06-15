@@ -2,12 +2,14 @@
 layout: default
 ---
 
-{% include social.html %}
+<div class="wrapper">
+	{% include social.html %}
 
-<div class="page-intro">
-	<h2>{{ page.page-intro }}</h2>
+	<div class="page-intro">
+		<h2>{{ page.page-intro }}</h2>
 
-	<h1 class="call-to-action"><a href="{{ page.call-to-action-url }}">{{ page.call-to-action-text }}</a></h1>
+		<h1 class="call-to-action"><a href="{{ page.call-to-action-url }}">{{ page.call-to-action-text }}</a></h1>
+	</div>
 </div>
 
 {% for teaser in page.teaser %}
@@ -15,8 +17,8 @@ layout: default
 	<img src="{{ base }}/assets/img/{{ teaser.image }}" alt="{{ teaser.image-alt }}">
 	<div class="teaser-text">
 		<h3>{{ teaser.title }}</h3>
-		{{ teaser.description }}
-		<a href="{{ page.call-to-action-url }}">{{ page.call-to-action }}</a>
+		<p>{{ teaser.description }}</p>
+		<a href="{{ teaser.call-to-action-url }}">{{ teaser.call-to-action }}</a>
 	</div>
 </div>
 {% endfor %}
