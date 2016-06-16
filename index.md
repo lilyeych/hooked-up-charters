@@ -28,7 +28,7 @@ teaser:
       image-alt: 
       title: Fish with the latest technology
       description: Embrace local scenery that will take your breath away, while riding comfortably in our 23ft Grady White boat. This fishing machine was built for the sea, equipped with a large open deck to provide stability and comfort, and with all the latest fish finder technologies, including navigation radar GPS.
-      call-to-action: Learn more our boat
+      call-to-action: Learn more about our boat
       call-to-action-url: #
     - image: img-home-row-2.jpg
       title: Fishing with Hooked-Up Charters in beautiful B.C.

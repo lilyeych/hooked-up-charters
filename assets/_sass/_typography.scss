@@ -44,7 +44,7 @@ h3 {
 }
 
 p {
-	margin: 8px 0;
+	margin: 0 0 8px 0;
 }
 
 strong {
@@ -80,5 +80,13 @@ a:visited {
 		line-height: 20px;
 		font-weight: 400;
 		text-decoration: none;
+	}
+
+	a {
+		&:hover,
+		&:active {
+			color: $grey;
+			text-decoration: underline;
+		}
 	}
 }

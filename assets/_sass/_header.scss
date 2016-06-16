@@ -17,7 +17,7 @@
 	
 	.logo {
 		display: block;
-		margin-top: 20px;
+		padding-top: 20px;
 		
 		.mobile-logo {
 			display: block;
@@ -36,19 +36,19 @@
 		width: 100%;
 		z-index: 1000;
 		
-		.menu-icon {
+		.nav-icon {
 			display: block;
 			width: 100%;
 			height: 30px;
 			margin-top: 20px;
 			text-align: right;
 			
-			.icon-nav-close {
+			.nav-icon-close {
 				display: none;
 			}
 		}
 
-		.menu-items {
+		.nav-items {
 			display: none;
 			margin: 0;
 			padding: 0;
@@ -66,9 +66,15 @@
 			height: 100%;
 		
 			background: $white;
-			background-image: url("../img/img-bg-home-mobile.jpg"); /* fallback */
-			background-image: url("../img/img-bg-home-mobile.jpg"), linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,1) 100%); /* W3C */
+			background-image: url("../img/img-bg-nav-mobile.jpg"); /* fallback */
+			background-image: url("../img/img-bg-nav-mobile.jpg"), linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,1) 100%); /* W3C */
 			@include bg-cover;
+			
+			@include breakpoint(retina) {
+				background-image: url("../img/img-bg-nav-mobile@2x.jpg"); /* fallback */
+				background-image: url("../img/img-bg-nav-mobile@2x.jpg"), linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 33%,rgba(255,255,255,0) 66%,rgba(255,255,255,1) 100%); /* W3C */
+				@include bg-cover;
+			}
 
 			// /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+33,0+66,0+100,1+100 */
 			// background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
@@ -77,16 +83,16 @@
 			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 			
 			.nav-icon {
-				.icon-nav {
+				.nav-icon-open {
 					display: none;
 				}
 
-				.icon-nav-close {
-					display: block;
+				.nav-icon-close {
+					display: inline-block;
 				}
 			}
 
-			.menu-items {
+			.nav-items {
 				display: block;
 			}
 
@@ -110,7 +116,7 @@
 			display: block;
 		}
 
-		.menu-icon {
+		.nav-icon {
 			display: none;
 		}
 	//     position: absolute;
