@@ -14,11 +14,16 @@ layout: default
 
 {% for teaser in page.teaser %}
 <div class="teaser"> 
-	<img src="{{ base }}/assets/img/{{ teaser.image }}" alt="{{ teaser.image-alt }}">
-	<div class="teaser-text">
-		<h3>{{ teaser.title }}</h3>
-		<p>{{ teaser.description }}</p>
-		<a href="{{ teaser.call-to-action-url }}">{{ teaser.call-to-action }}</a>
+	<div class="teaser-img">
+		<img src="{{ base }}/assets/img/{{ teaser.image }}" alt="{{ teaser.image-alt }}">
 	</div>
+	<div class="teaser-text-container">
+		<div class="teaser-text">
+			<h3>{{ teaser.title }}</h3>
+			<p>{{ teaser.description }}</p>
+			<a href="{{ teaser.call-to-action-url }}">{{ teaser.call-to-action }}</a>
+		</div>
+	</div>
+	
 </div>
 {% endfor %}

@@ -44,6 +44,11 @@
 		padding: 20px 30px;
 		background-color: $highlight;
 		
+		@include breakpoint(baby-bear) {
+			display: inline-block;
+			padding: 5px 30px;
+		}
+		
 		a {
 			color: $grey;
 			text-decoration: none;

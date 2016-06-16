@@ -10,9 +10,34 @@ $susy: (
 	@include container(90%);
 }
 
-.teaser-text {
-	@include container(90%);
+.teaser {
+	@include breakpoint(baby-bear) {
+		 @include clearfix; 
+	}
+
+	.teaser-img {
+		@include breakpoint(baby-bear) {
+			@include span(6);
+		}
+	}
+	.teaser-text-container {
+		@include container(90%);
+		
+		@include breakpoint(baby-bear) {
+			@include container(100%);
+			@include span(6);
+		}
+	}
+
+	&:nth-child(even) {
+		.teaser-img {
+			@include breakpoint(baby-bear) {
+				@include span(last 6);
+			}
+		}
+	}
 }
+
 
 // .content-area {
 // 	@include container(90%);

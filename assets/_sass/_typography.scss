@@ -58,17 +58,31 @@ a:visited {
 	text-decoration: underline;
 }
 
-.header-nav {
-	.menu-items {
-		a {
-			font-weight: 700;
-			font-size: 15px;
-			line-height: 20px;
-			text-transform: uppercase;
-			
-			&:hover {
-				color: $grey;
-				text-decoration: none;
+.site-header {
+	text-align: center;
+	
+	@include breakpoint(mama-bear) {
+		text-align: left;
+	}
+
+	.header-nav {
+		.nav-items {
+			text-align: center;
+
+			@include breakpoint(mama-bear) {
+				text-align: right;
+			}
+
+			a {
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 20px;
+				text-transform: uppercase;
+				
+				&:hover {
+					color: $grey;
+					text-decoration: none;
+				}
 			}
 		}
 	}

@@ -41,21 +41,9 @@ $content-width:    800px;
 }
 
 /**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-/**
  * Vertical Align
  */
-%vertical-align {
+@mixin vertical-align {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
