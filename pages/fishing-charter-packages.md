@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: interior
 title: Fishing Charter Packages
 ref: packages
 permalink: /fishing-charter-packages/

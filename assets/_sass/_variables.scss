@@ -76,7 +76,7 @@ $content-width:    800px;
 
 @mixin header-bg($headerImg) {
 
-  background: url('../img/banner-#{$headerImg}-mobile.jpg') no-repeat center bottom; 
+  background: url('../img/#{$headerImg}-mobile.jpg') no-repeat center bottom; 
   @include bg-cover;
 
   /* preserve aspet ratio */
@@ -84,38 +84,38 @@ $content-width:    800px;
   // min-height: 100%;
 
   /* ie fallbacks */
-  // background-image: url('../img/banner-#{$headerImg}-mobile.jpg');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}-mobile.jpg', sizingMethod='scale')";
+  // background-image: url('../img/#{$headerImg}-mobile.jpg');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/#{$headerImg}-mobile.jpg', sizingMethod='scale')";
   
 
   @media 
   (-webkit-min-device-pixel-ratio: 2), 
   (min-resolution: 192dpi) { 
-    background: url('../img/banner-#{$headerImg}-mobile@2x.jpg') no-repeat center bottom; 
+    background: url('../img/#{$headerImg}-mobile@2x.jpg') no-repeat center bottom; 
     @include bg-cover;
 
     /* ie fallbacks */
-    // background-image: url('../img/banner-#{$headerImg}-mobile@2x.jpg');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}-mobile@2x.jpg', sizingMethod='scale')";
+    // background-image: url('../img/#{$headerImg}-mobile@2x.jpg');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/#{$headerImg}-mobile@2x.jpg', sizingMethod='scale')";
   }
 
   @media only screen and (min-width: 768px) {
-    background: url('../img/banner-#{$headerImg}.jpg') no-repeat center bottom; 
+    background: url('../img/#{$headerImg}.jpg') no-repeat center bottom; 
     @include bg-cover;
 
     /* ie fallbacks */
-    // background-image: url('../img/banner-#{$headerImg}.jpg');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}.jpg', sizingMethod='scale')";
+    // background-image: url('../img/#{$headerImg}.jpg');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/#{$headerImg}.jpg', sizingMethod='scale')";
 
     @media 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi) { 
-      background: url('../img/banner-#{$headerImg}@2x.jpg') no-repeat center bottom; 
+      background: url('../img/#{$headerImg}@2x.jpg') no-repeat center bottom; 
       @include bg-cover;
 
       /* ie fallbacks */
-      // background-image: url('../img/banner-#{$headerImg}@2x.jpg');
-      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/banner-#{$headerImg}@2x.jpg', sizingMethod='scale')";
+      // background-image: url('../img/#{$headerImg}@2x.jpg');
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/#{$headerImg}@2x.jpg', sizingMethod='scale')";
     }
 
   }
