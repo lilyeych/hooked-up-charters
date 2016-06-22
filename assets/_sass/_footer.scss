@@ -11,24 +11,26 @@
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
-		
-		@include breakpoint(mama-bear) {
-			&:first-child {
-				a {
-					padding-left: 0;
-				}
-			}
-
-			&:last-child {
-				a {
-					padding-right: 0;
-				}
-			}
-		}
 
 		li {
 			@include breakpoint(mama-bear) {
 				display: inline-block;
+			}
+
+			&.first {
+				a {
+					@include breakpoint(mama-bear) {
+						padding-left: 0;
+					}
+				}
+			}
+
+			&.last {
+				a {
+					@include breakpoint(mama-bear) {
+						padding-right: 0;
+					}
+				}
 			}
 		}
 
