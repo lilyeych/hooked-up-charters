@@ -13,8 +13,10 @@
 
 .site-header {
 	
-	height: 480px;
-	
+	.wrapper {
+		height: 100%;
+	}
+
 	.logo {
 		display: inline-block;
 		padding-top: 20px;
@@ -168,10 +170,26 @@
 	}
 
 	.banner-text {
-		height: 279px;
+		margin-top: 10px;
+		margin-bottom: 40px;
 		
-		h1 {
-			@include vertical-align;
+		@include breakpoint(mama-bear) {
+			margin-top: 80px;
+			margin-bottom: 100px;
 		}
+	}
+}
+
+.scroll-icon {
+	display: block;
+	width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	
+	img {
+		width: 30px;
+		height: auto;
+		padding: 20px;
 	}
 }

@@ -29,7 +29,12 @@
 	img {
 		width: 30px;
 		height: auto;
-		margin: 20px 30px 10px 30px
+		margin: 20px 30px 10px 30px;
+		
+		@include breakpoint(baby-bear) {
+			width: 20px;
+			margin: 10px 25px 5px 25px;
+		}
 	}
 }
 
