@@ -1,6 +1,6 @@
 $susy: (
 	columns: 12,
-	gutters: 1/4,
+	gutters: 1/3,
 	math: fluid,
 	output: float,
 	gutter-position: split,
@@ -8,11 +8,59 @@ $susy: (
 
 .wrapper {
 	@include container(90%);
+	@include breakpoint(mama-bear) {
+		@include full-container;
+	}
+}
+
+.site-header {
+	.container {
+		@include clear; 
+	}
+
+	.logo {
+		@include breakpoint(mama-bear) {
+			@include span(3);
+		}
+
+		@include breakpoint(papa-bear) {
+			@include span(4);
+		}
+	}
+
+	.header-nav {
+		@include span(12);
+		
+		@include breakpoint(mama-bear) {
+			@include span(9);
+		}
+
+		@include breakpoint(papa-bear) {
+			@include span(8);
+		}
+
+		.container {
+			// @include container(90%);
+			@include breakpoint(max-mama-bear) {
+				@include full-container;
+			}
+		}
+	}
+
+	.banner-text {
+		h1 {
+			@include breakpoint(baby-bear) {
+				@include narrow-container;
+			}
+		}
+		
+	}
 }
 
 .teaser {
 	@include breakpoint(baby-bear) {
-		 @include clearfix; 
+		 @include clearfix;
+		 @include full-container;
 	}
 
 	.teaser-img {
@@ -38,53 +86,16 @@ $susy: (
 	}
 }
 
-
-// .content-area {
-// 	@include container(90%);
-// 	-webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-// 	@include breakpoint(mama-bear) {
-// 		width: 90%;
-// 		max-width: 1180px;
-// 	}
-// }
-
-// .inner-content-area {
-// 	@include container(90%);
-// 	-webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-
-// 	@include breakpoint (baby-bear) {
-// 		@include container(80%);
-// 	}
+.site-footer {
+	.nav-items {
+		@include breakpoint(mama-bear) {
+			@include span(9);
+		}
+	}
 	
-// 	@include breakpoint(mama-bear) {
-// 		width: 90%;
-// 		max-width: 1180px;
-// 	}
-// }
-
-// .header-text {
-// 	@include breakpoint(baby-bear) {
-// 		@include span(5);
-// 	}
-// }
-
-// .header-spacer {
-// 	@include breakpoint(baby-bear) {
-// 		@include span(1);
-// 	}
-// }
-// .header-blurb {
-// 	@include breakpoint(baby-bear) {
-// 		@include span(6);
-// 	}
-// }
-
-// .portfolio-intro {
-// 	@include breakpoint(baby-bear) {
-// 		@include span(8);
-// 	}
-// }
+	.copy-right {
+		@include breakpoint(mama-bear) {
+			@include span(3 last);
+		}
+	}
+}

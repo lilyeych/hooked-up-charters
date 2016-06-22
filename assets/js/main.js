@@ -1,8 +1,10 @@
+//@prepros-prepend jquery-3.0.0.min.js
+
 $(window).on('resize',mobileNav);
 $(document).ready(mobileNav);
 
 function mobileNav() {
-    if ($(window).width() <= 1024) {
+    if ($(window).width() <= 1000) {
 		$('#nav-icon').on('click', function(){
 			$('#header-nav').toggleClass('nav-open');
 		});

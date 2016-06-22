@@ -8,3 +8,5 @@ Missing:
 To Do:
 1. Mobile navigation example: http://instrument.com.
     Background should fade in, and navigation items to fade up
+2. Implement grid
+3. Incorporate narrow grid

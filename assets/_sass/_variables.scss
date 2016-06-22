@@ -18,16 +18,16 @@ $content-width:    800px;
 
 @mixin breakpoint($point) {
   @if $point == papa-bear {
-    @media (min-width: 1700px) { @content; }
+    @media (min-width: 1280px) { @content; }
   }
   @else if $point == max-papa-bear {
-    @media (max-width: 1688px) { @content; }
+    @media (max-width: 1279px) { @content; }
   }
   @else if $point == mama-bear {
-    @media (min-width: 1024px) { @content; }
+    @media (min-width: 1000px) { @content; }
   }
   @else if $point == max-mama-bear {
-    @media (max-width: 1023px) { @content; }
+    @media (max-width: 999px) { @content; }
   }
   @else if $point == baby-bear {
     @media (min-width: 768px) { @content; }
@@ -40,9 +40,17 @@ $content-width:    800px;
   }
 }
 
-/**
- * Vertical Align
- */
+@mixin full-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@mixin narrow-container {
+  @include container(65%);
+}
+
 @mixin vertical-align {
   position: relative;
   top: 50%;
@@ -56,6 +64,14 @@ $content-width:    800px;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+}
+
+@mixin clear {
+  &:after {
+  content: "";
+  display: block;
+  clear: both;
+  }
 }
 
 @mixin header-bg($headerImg) {

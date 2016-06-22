@@ -14,7 +14,7 @@ h1 {
 	text-align: center;
 	color: $white;
 
-	@include breakpoint(baby-bear) {
+	@include breakpoint(mama-bear) {
 		font-size: 36px;
 		line-height: 48px;
 	}
@@ -26,7 +26,7 @@ h2 {
 	margin-bottom: 15px;
 	color: $grey;
 
-	@include breakpoint(baby-bear) {
+	@include breakpoint(mama-bear) {
 		font-size: 24px;
 		line-height: 36px;
 	}
@@ -37,7 +37,7 @@ h3 {
 	line-height: 31px;
 	color: $grey;
 	
-	@include breakpoint(baby-bear) {
+	@include breakpoint(mama-bear) {
 		font-size: 22px;
 		line-height: 34px;
 	}
@@ -75,13 +75,27 @@ a:visited {
 
 			a {
 				font-weight: 700;
-				font-size: 15px;
+				font-size: 12px;
 				line-height: 20px;
 				text-transform: uppercase;
+				
+				@include breakpoint(papa-bear) {
+					font-size: 14px;
+				}
 				
 				&:hover {
 					color: $grey;
 					text-decoration: none;
+				}
+
+				&.current {
+					color: $grey;
+					text-decoration: none;
+					
+					&:hover {
+						color: $brand;
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -89,8 +103,20 @@ a:visited {
 }
 
 .site-footer {
+	.nav-items {
+		@include breakpoint(mama-bear) {
+			text-align: left;
+		}
+	}
+
+	.copy-right {
+		@include breakpoint(mama-bear) {
+			text-align: right;
+		}
+	}
+
 	p, a {
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 20px;
 		font-weight: 400;
 		text-decoration: none;

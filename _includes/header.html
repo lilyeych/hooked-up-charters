@@ -1,23 +1,27 @@
 <header class="site-header">
-
+	
 	<div class="wrapper">
 
-		<a class="logo" href="{{ site.baseurl }}/">
-			<img class="mobile-logo" src="{{ site.baseurl }}/assets/img/logo-mobile.svg" alt="Hooked-Up Charters logo.">
-			<img class="desktop-logo" src="{{ site.baseurl }}/assets/img/logo.svg" alt="Hooked-Up Charters logo.">
-		</a>
+		<div class="container">
 
-		<nav id="header-nav" class="header-nav">
-			<div class="wrapper">
-				<a href="#" id="nav-icon" class="nav-icon">
-					<img class="nav-icon-open" src="{{ site.baseurl }}/assets/img/icon-nav.svg" alt="Navigation icon.">
-					<img class="nav-icon-close" src="{{ site.baseurl }}/assets/img/icon-close.svg" alt="X icon to close mobile navigation.">
-				</a>
+			<a class="logo" href="{{ site.baseurl }}/">
+				<img class="mobile-logo" src="{{ site.baseurl }}/assets/img/logo-mobile.svg" alt="Hooked-Up Charters logo.">
+				<img class="desktop-logo" src="{{ site.baseurl }}/assets/img/logo.svg" alt="Hooked-Up Charters logo.">
+			</a>
+
+			<nav id="header-nav" class="header-nav">
+				<div class="container">
+					<a href="#" id="nav-icon" class="nav-icon">
+						<img class="nav-icon-open" src="{{ site.baseurl }}/assets/img/icon-nav.svg" alt="Navigation icon.">
+						<img class="nav-icon-close" src="{{ site.baseurl }}/assets/img/icon-close.svg" alt="X icon to close mobile navigation.">
+					</a>
 
 				{% include nav.html %}
-			</div>
-		</nav>
-		
+				</div>
+			</nav>
+
+		</div>
+			
 		<div class="banner-text">
 			<h1>
 				{% if page.hero %}
@@ -27,6 +31,7 @@
 				{% endif %}
 			</h1>
 		</div>
+
 	</div>
 
 </header>
